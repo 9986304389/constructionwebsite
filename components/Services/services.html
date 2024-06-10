@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hannainfrastructure</title>
+    <meta property="og:title" content="hannainfrastructure" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p,
+        li,
+        ul,
+        pre,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        figure,
+        blockquote,
+        figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: transparent;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+
+        button:-moz-focus,
+        [type="button"]:-moz-focus,
+        [type="reset"]:-moz-focus,
+        [type="submit"]:-moz-focus {
+            outline: 1px dotted ButtonText;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Inter;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-theme-neutral-dark);
+            background-color: var(--dl-color-theme-neutral-light);
+
+            fill: var(--dl-color-theme-neutral-dark);
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbar-placeholder").load("../Header/header.html");
+            $("#footer").load("../Footer/footer.html")
+            $("#mobileNav").load("../MobileViewNav/mobileviewnav.html")
+        });
+    </script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../../style.css" />
+    <div>
+        <link href="../../index.css" rel="stylesheet" />
+        <div class="home-container">
+            <header class="navbar4-container">
+                <header data-thq="thq-navbar" class="navbar4-navbar-interactive">
+                    <div data-thq="thq-navbar-nav" class="navbar4-desktop-menu">
+                        <div class="navbar4-buttons">
+                            <span class="navbar4-text"><span>Constrution</span></span>
+                        </div>
+                        <div id="navbar-placeholder"></div>
+
+                    </div>
+                    <div data-thq="thq-burger-menu" class="navbar4-burger-menu">
+                        <svg viewBox="0 0 1024 1024" class="navbar4-icon">
+                            <path
+                                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div data-thq="thq-mobile-menu" class="navbar4-mobile-menu">
+                        <div class="navbar4-nav">
+                            <div class="navbar4-top">
+                                <img alt="logo"
+                                    src="https://uploads-ssl.webflow.com/5e20cf1a84fda6219682cc9b/5e2f40ca7a755f868032de4e_HI%20Logo%20(Gold)%20Rev%201.svg"
+                                    class="navbar4-logo" />
+                                <div data-thq="thq-close-menu" class="navbar4-close-menu">
+                                    <svg viewBox="0 0 1024 1024" class="navbar4-icon2">
+                                        <path
+                                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div id="mobileNav"></div>
+                        </div>
+                        <!-- <div class="navbar4-buttons1">
+              <button class="thq-button-filled">Login</button>
+              <button class="thq-button-outline">Register</button>
+            </div> -->
+                    </div>
+                </header>
+            </header>
+            <div class="hero8-header26 thq-section-padding" style="background-color: rgb(20,20,20) !important;">
+                <div class="hero8-max-width thq-flex-column thq-section-max-width">
+                    <div class="hero8-column">
+                        <div class="hero8-content">
+                            <h3 class="hero8-text thq-heading-1" style="font-size: 35px;">
+                                <span>Professional Construction Services</span>
+                            </h3>
+                            <p class="hero8-text1 thq-body-large">
+                                <span>
+                                    Leading firm delivering high-quality,
+                                    </br>
+                                    innovative, and sustainable construction solutions for you.ff
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="features1-content">
+                            <div class="features1-row thq-flex-row" style="padding-top: 20px;">
+                                <div class="features1-feature1 thq-flex-column" style="gap: 0px !important;">
+                                    <img alt="PlaceholderImage1314"
+                                        src="https://www.cittasolutions.com/Content/images/industries/construction-about.jpg"
+                                        class="thq-img-ratio-4-3 features1-feature1-image" />
+                                    <div class="features1-content1 thq-flex-column"
+                                        style="background-color: white; text-align: center; padding: 10px;">
+                                        <h3 class="thq-heading-3">
+                                            <span>Explore our key features</span>
+                                        </h3>
+                                        <span class="thq-body-small">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse varius enim in eros elementum tristique. Duis
+                                                cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="features1-feature1 thq-flex-column" style="gap: 0px !important;">
+                                    <img alt="PlaceholderImage1314"
+                                        src="https://www.shutterstock.com/image-photo/industry-40-modern-factory-chief-600nw-1936499782.jpg"
+                                        class="thq-img-ratio-4-3 features1-feature1-image" />
+                                    <div class="features1-content1 thq-flex-column"
+                                        style="background-color: white; text-align: center; padding: 10px;">
+                                        <h3 class="thq-heading-3">
+                                            <span>Explore our key features</span>
+                                        </h3>
+                                        <span class="thq-body-small">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse varius enim in eros elementum tristique. Duis
+                                                cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="features1-feature1 thq-flex-column" style="gap: 0px !important;">
+                                    <img alt="PlaceholderImage1314"
+                                        src="https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg"
+                                        class="thq-img-ratio-4-3 features1-feature1-image" />
+                                    <div class="features1-content1 thq-flex-column"
+                                        style="background-color: white; text-align: center; padding: 10px;">
+                                        <h3 class="thq-heading-3">
+                                            <span>Explore our key features</span>
+                                        </h3>
+                                        <span class="thq-body-small">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Suspendisse varius enim in eros elementum tristique. Duis
+                                                cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats2-container thq-section-padding">
+                <h2>Professional Services</h2>
+                <span style="font-size: 15px;padding-top: 20px; text-align: center;margin-bottom: 80px;">Leading firm
+                    delivering high-quality,
+                    innovative, and sustainable construction</br> solutions for you.ff</span>
+                <div class="stats2-max-width thq-section-max-width" style="gap: 10px !important;">
+                    <div class="stats2-container8 thq-flex-column" style="height: 300px;">
+                        <img alt="image"
+                            src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZSUyMHdvcmtpbmclMjBvbiUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="thq-img-ratio-1-1 stats2-image" />
+                    </div>
+                    <div class="stats2-container8 thq-flex-column" style="height: 300px;">
+                        <img alt="image"
+                            src="https://img.freepik.com/free-photo/business-presentation-laptop-screen_53876-13516.jpg?size=626&ext=jpg"
+                            class="thq-img-ratio-1-1 stats2-image" />
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                    <div class="stats2-container thq-section-padding">
+                        <div class="stats2-max-width thq-section-max-width" style="gap: 10px !important;">
+                            <p>Expert Construction Team</p>
+                        </div>
+                    </div>
+                    <div class="stats2-container thq-section-padding button-container" style="text-align: end;">
+                        <button class="thq-button-filled hero8-button">
+                            <span class="thq-body-small"><span>Contact</span></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="stats2-container thq-section-padding">
+
+                <span
+                    style="font-size: 15px;padding-top: 20px; text-align: left;margin-bottom: 80px; width: 100%;">Leading
+                    firm
+                    delivering high-quality,
+                    innovative, and sustainable construction</br> solutions for you.ff</span>
+                <div class="stats2-max-width thq-section-max-width" style="gap: 10px !important;">
+                    <div class="stats2-container8 thq-flex-column" style="height: 300px;">
+                        <img alt="image"
+                            src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZSUyMHdvcmtpbmclMjBvbiUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="thq-img-ratio-1-1 stats2-image" />
+                    </div>
+                    <div class="stats2-container8 thq-flex-column" style="height: 300px;">
+                        <img alt="image"
+                            src="https://img.freepik.com/free-photo/business-presentation-laptop-screen_53876-13516.jpg?size=626&ext=jpg"
+                            class="thq-img-ratio-1-1 stats2-image" />
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                    <div class="stats2-container thq-section-padding">
+                        <div class="stats2-max-width thq-section-max-width" style="gap: 10px !important;">
+
+                            <div class="hero8-content">
+                                <h3 class="hero8-text thq-heading-1" style="font-size: 25px;color: black;">
+                                    <span>Customized Solutions Available</span>
+                                </h3>
+                                <p class="hero8-text1 thq-body-large" style="color: black;font-size: 15px">
+                                    <span>
+                                        Leading firm delivering high-quality,
+
+                                    </span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats2-container thq-section-padding button-container" style="text-align: end;">
+                        <button class="thq-button-filled hero8-button">
+                            <span class="thq-body-small"><span>Learn</span></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="stats2-container1 thq-flex-column"
+                style="gap: 0px !important; background-color: rgb(57, 110, 110); height: 409px; display: flex; justify-content: center; align-items: center; text-align: center; color: azure;">
+                <div class="team1-card2"
+                    style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="flex-direction: column; text-align: center;">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+
+                    <div class="team1-content05"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+                        <span class="team1-text11 thq-body-small">
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                in eros elementum tristique.
+                            </span>
+                        </span>
+                    </div>
+                    <div class="team1-content03">
+                        <img alt="Member Alt"
+                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=500"
+                            class="team1-placeholder-image thq-img-round thq-img-ratio-1-1" />
+                        <span class="team1-text05 thq-body-small">
+                            <span>
+                                kavitha
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </div>
+    <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
+</html>

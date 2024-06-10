@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="header.css">
+  <title>Navigation</title>
+  <style>
+    .navbar4-links a.active {
+      text-decoration: underline !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar content -->
+  <nav class="navbar4-links">
+    <a href="../../index.html" class="thq-link thq-body-small"><span>Home</span></a>
+    <a href="/components/About/about.html" class="thq-link thq-body-small"><span>About</span></a>
+    <a href="/components/Services/services.html" class="thq-link thq-body-small"><span>Services</span></a>
+    <a href="/components/Contact/contact.html" class="thq-link thq-body-small"><span>Contact</span></a>
+  </nav>
+  <script>
+  
+    $(document).ready(function () {
+      console.log("ready!");
+      try {
+        console.log("Script is running...");
+        var links = document.querySelectorAll('.navbar4-links a');
+        var currentUrl = window.location.href;
+
+
+        links.forEach(function (link) {
+
+          if (link.href === currentUrl) {
+            link.style.borderBottom = "2px solid black";
+          }
+        });
+      } catch (error) {
+        console.error("An error occurred:", error);
+      }
+    });
+
+  </script>
+</body>
+
+</html>
